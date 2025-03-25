@@ -1,0 +1,534 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+input, textarea {
+    outline: none;
+}
+
+body {
+    font-family: 'Poppins',sans-serif;
+    overflow: auto;
+}
+
+.lay{
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 200vh;
+}
+.lay-2{
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 80vh;
+}
+
+.profile{
+    background-color: white;
+}
+.profile ul{
+    display: flex;
+    margin: 30px 14px;
+}
+.profile ul .imgbx{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profile .imgbx img{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile ul li {
+    list-style-type: none;
+}
+ul {
+    padding-left: 0rem;
+}
+
+.judul{
+    padding: 17px 0px 0 12px;
+}
+
+.judul h4{
+    font-size: 25px;
+    font-weight: 700;
+}
+.judul h6{
+    font-size: 12px;
+    font-weight: 500;
+}
+.kiri{
+
+}
+
+.kanan{
+    position: relative;
+    z-index: 4;
+}
+
+section{
+    margin: 20px;
+}
+
+.content {
+    margin: 20px;
+}
+h3{
+    font-size: 20px;
+    font-weight: bolder;
+}
+.vid-1{
+   display: flex;
+}
+.vid-1 video{
+    width: 30%;
+    border-radius: 10px;
+    margin: 15px 0;
+    box-shadow: 5px 7px 20px -5px rgba(0,0,0,0.9);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+.vid-1 p{
+    margin: 20px;
+    text-align: justify;
+}
+
+video{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 5px 7px 20px -5px rgba(0,0,0,0.9);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+.pesan {
+    margin: 20px 30px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 7px 20px -5px rgba(0,0,0,0.9);  
+}
+form{
+    text-align: center;
+}
+label textarea{
+    border-radius: 10px;
+    box-shadow: 5px 7px 20px -5px rgba(0,0,0,0.9);
+}
+button{
+    display: inline-block;
+    border-radius: 50px;
+    margin: 5px 200px;
+    padding: 10px 70px;
+    background-color: #3498db;
+    
+}
+button:hover{
+    display: block;
+    border-radius: 50px;
+    margin: 5px 180px;
+    padding: 10px 90px;
+    background-color: #fff;
+    transition: 0.3s;
+}
+
+.icon{
+    width: 100%;
+    text-align: center;
+}
+.tombol{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: #f1f1f1;
+    margin: 10px;
+    border-radius: 30%;
+    -webkit-border-radius: 30%;
+    -moz-border-radius: 30%;
+    -ms-border-radius: 30%;
+    -o-border-radius: 30%;
+    box-sizing: 0 5px 15px -5px #000000/0;
+    overflow: hidden;
+    position: relative;
+    color: #2980b9;
+}
+.tombol i{
+    transition: 0.2s linear;
+    -webkit-transition: 0.2s linear;
+    -moz-transition: 0.2s linear;
+    -ms-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
+    font-size: 26px;
+    line-height: 50px;
+}
+.tombol:hover i{
+    transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
+    color: #f1f1f1;
+}
+.tombol::before{
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 70%;
+    top: 70%;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    background: #3498db;
+}
+.tombol:hover:before{
+    left: -20%;
+    top: -20%;
+    animation: aaa 0.7s 1;
+    -webkit-animation: aaa 0.7s 1;
+}
+
+.random {
+    display: flex;
+    text-align: center;
+    margin-top: 170px;
+    margin-bottom: 20px;
+    padding: 0px 10px;
+    height: 30vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.random .wrapper  h3 {
+    cursor: pointer;
+    font-size: 2rem;
+    border-bottom: 2px solid black;
+    display: inline-block;
+    padding-bottom: 1px;
+    margin-top: 200px;
+    margin-bottom: 10px;
+}
+
+.line {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 20%;
+}
+.line-1 {
+    z-index: -15;
+    opacity: 0.6;
+}
+.line-2 {
+    z-index: -10;
+    opacity: 0.7;
+}
+.line-3 {
+    z-index: -5;
+    opacity: 0.8;
+}
+.wave {
+    position: absolute;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background-repeat: repeat no-repeat;
+    background-position: 0 bottom;
+    transform-origin: center bottom;
+}
+.wave1 {
+    -webkit-backdrop-size: 50% 80px;
+    background-size: 50% 100px;
+}
+.wave2 {
+    -webkit-backdrop-size: 50% 100px;
+    background-size: 50% 100px;
+    animation: animate 12s linear infinite;
+}
+.wave3 {
+    -webkit-backdrop-size: 50% 80px;
+    background-size: 50% 120px;
+    animation: animate 18s linear infinite;
+}
+.back{
+    position: relative;
+    text-decoration: none;
+    color: blue;
+    text-align: center;
+    align-items: center;
+}
+footer {
+    color: black;
+    text-align: center;
+    padding-top: 0px;
+}
+
+.loader {
+    border-top-color: #ef4444;
+    -webkit-animation: spinner 1.5s linear infinite;
+    animation: spinner 1.5s linear infinite;
+  }
+  
+  @-webkit-keyframes spinner {
+    0% {
+      -webkit-transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes spinner {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+@media(min-width:360px) and (max-width:812px) {
+    .lay{
+        grid-template-columns: 0 100% 0;
+    }
+    .lay-2{
+        grid-template-columns: 0 100% 0;
+    }
+    .profile ul .imgbx{
+        width: 100px;
+    }
+    button{
+        margin: 10px 20px;
+    }
+    button:hover{
+        margin: 10px 30px;
+    }
+    .vid-1{
+        display: contents;
+    }
+    .vid-1 video{
+        width: 100%;
+    }
+    .vid-1 p{
+        display: none;
+    }
+    footer {
+        padding-top: 50px;
+    }
+    .wave1 {
+        -webkit-backdrop-size: 50% 40px;
+        background-size: 70% 50px;
+    }
+    .wave2 {
+        -webkit-backdrop-size: 50% 40px;
+        background-size: 70% 50px;
+        animation: animate 12s linear infinite;
+    }
+    .wave3 {
+        -webkit-backdrop-size: 50% 40px;
+        background-size: 60% 60px;
+        animation: animate 18s linear infinite;
+    }
+    }
+    @media(min-width:810px) and (max-width:1080px) {
+        .about-me .wrapper {
+            display: grid;
+            grid-template-columns: repeat (2,1fr);
+        }
+        .about-me .wrapper a {
+            padding: 5px 20px;
+            color: #ffffff;
+            border-radius   : 50px;
+            background: #7FB5FF;
+            margin: 15px 115px 20px 115px;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+    }
+    }
+    @keyframes aaa {
+        0%{
+        left: -110%;
+        top: 10%;
+        animation:     ;
+        -webkit-animation:;
+        }
+        25%{
+        left: 5%;
+        top: -40%;
+        animation:     ;
+        -webkit-animation:     ;
+        }
+        100%{
+        left: -5%;
+        top: -30%;
+        animation:     ;
+        -webkit-animation:     ;
+        }
+    }
+    @keyframes animate {
+    0%{
+        transform: translateX(0) translateZ(0) scale(1);
+    }
+    50%{
+        transform: translateX(-25%) translateZ(0) scale(0.5);
+    }
+    100%{
+        transform: translateX(-50%) translateZ(0) scale(1);
+    }
+    }
+
+/* header {
+    position: relative;
+    text-align: center;
+}
+
+header .wrapper img {
+    width: 250px;
+    height: 250px;
+    margin-top: 50px;
+    border-radius: 50%;
+    box-shadow: -1px 7px 12px 0px rgba(0,0,0,.3)
+}
+
+header .wrapper img:hover {
+    transform: scale(1.2,1.2);
+    transition: transform .2s ease-out ;
+}
+
+.wrapper h2 {
+    font-size: 50px;
+    font:'Ek Mukta ExtraBold';
+    font-weight: bold;
+    justify-content: center;
+    }
+
+.wrapper h1 {
+    margin-top: 80px;
+    color: black;
+    font-size: 2.3rem;
+    text-shadow: 1px 2px #EEEEEE;
+}
+
+header .wrapper ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+header .wrapper ul li a {
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 30px;
+    text-decoration: none;
+    margin-top: 20px;
+    color: black;
+}
+
+.tbl-biru {
+    padding: 5px 20px;
+    border-radius: 50px;
+    background: #fff;
+    margin: -15px 20px 0px 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.tbl-biru:hover {
+    transition: 0.2s;
+    font-size: 19px;
+    background: #B4E197;
+    box-shadow: 0 5px 15px -5px rgba(0,0,0,.9);
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+}
+
+.garis {
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+    opacity: 0.2;
+}
+
+.about-me {
+    text-align: center;
+    padding: 40px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.about-me .wrapper p {
+    text-align: center;
+    margin: 10px 50px 60px 50px;
+}
+
+.about-me .wrapper a {
+    padding: 5px 20px;
+    color: white;
+    border-radius: 50px;
+    background: black;
+    margin: -15px 20px 0px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+.about-me .wrapper a:hover {
+    background: #B4E197;
+    box-shadow: 0 5px 15px -5px rgba(0,0,0,.9);
+}
+video {
+    border-radius: 20px;
+    box-shadow: 2px 6px 20px 4px rgba(0,0,0,0.9);
+}
+.karyaku {
+    display: block;
+    text-align: center;
+    margin: 20px;
+    margin-bottom: 150px;
+    padding: 0px 10px;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.karyaku .wrapper  h3 {
+    cursor: pointer;
+    font-size: 2rem;
+    border-bottom: 2px solid black;
+    display: inline-block;
+    padding-bottom: 1px;
+    margin-bottom: 10px;
+}
+
+.wrapper-karya {
+    display: grid;
+    grid-column: 5px;
+    width: 35%;
+    margin: 20px  auto;
+    grid-template-columns: repeat(1,1fr);
+}
+
+.wrapper-karya a .karya-items {
+    text-decoration: none;
+    text-align: left;
+    font-size: 15px;
+    display: block;
+    margin: 10px;
+} */
